@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+    background: linear-gradient(to bottom right, rgb(56, 28, 16), rgb(255, 255, 255));
+}
+.calculator{
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 0px;
+   width: 320px;
+   background-color: hsl(234, 12%, 16%);
+   border-radius: 35px;
+  padding-top: 10px!important;
+  height: 600px;
+  box-shadow: 1px 1px 7px 1px rgb(0, 0, 0);
+}
+#keys{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      column-gap: 2px;
+      row-gap: 10px;
+      justify-items: center;
+      padding: 14px;
+      padding-bottom: 40px;
+      padding-bottom: none!important;
+}
+#displayResult{ 
+    margin: 10px;
+    padding-top: 70px;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    height:200px;
+    background-color: hsl(234, 12%, 16%);
+    border:0px;
+    color:rgb(255, 255, 255);
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#display{
+  margin-left: 20px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  height:150px;
+  background-color: hsl(234, 12%, 16%);
+  border:0px;
+  color:rgb(106, 106, 106);
+  display: flex;
+ font-weight: 700;
+}
+button{
+    width: 60px;
+    height:60px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: hsl(234, 14%, 15%);
+    box-shadow: 0px 2px 1px 0px hsl(220, 14%, 8%),0px -2px 1px 0 rgb(134, 134, 134);
+
+}
+button:hover{
+    background-color: hsl(0, 0%, 100%);
+    cursor:pointer;
+}
+.operator{
+    color: rgba(106, 106, 126, 0.838);
+    color:orange;
+}
+.operator:hover{
+    background-color: rgb(61, 61, 61);
+}
+.numbers{
+    color: rgba(139, 139, 160, 0.838);
+}
+.numbers:hover{
+    background-color: rgb(255, 255, 255);
+    color:black
+}
+.equal{
+    background-color:orange;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: none;
+    color:rgb(255, 255, 255);
+}
+.equal:hover{
+    background-color:rgb(180, 123, 17);
+}
+.operator.star{
+        padding-top: 10px;
+ }
+ .point{
+    padding-bottom: 20px;
+ }
